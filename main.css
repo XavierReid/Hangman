@@ -1,0 +1,118 @@
+body {
+    font-family: 'helvetica neue';
+    background: #ffc600;
+    overflow: hidden;
+    margin: 0;
+}
+p {
+    margin: 5px;
+}
+.container {
+    text-align: center;
+    padding: 25px;
+    display: inline-block;
+    position: relative;
+    left: 25%;
+}
+.keyboard {
+    background-color: whitesmoke;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    border: 1px solid lightgray;
+    /* display: inline-block; */
+    border-top: 0;
+}
+
+.key {
+    min-width: 55px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 10px, 5px, 5px rgba(0, 0, 0, 0.1);
+    margin: 2px;
+    transition: opacity 0.6s;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+}
+
+.key:focus {
+    outline: none;
+    border: none;
+}
+#guess-box:focus {
+    outline: none;
+    border: none;
+}
+
+.guess {
+    width: 25%;
+    color: white;
+    background-color: #007aff;
+    display: block;
+    margin: 10px auto;
+}
+
+#guess-box {
+    border: 1px solid lightgray;
+    padding: 10px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.display {
+    height: 300px;
+    background: whitesmoke;
+    /* display: inline-block; */
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-radius: 25px 25px 0 0;
+    padding: 35px;
+}
+
+.screen {
+    width: 100%;
+    background: white;
+    height: 300px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 25px 25px 25px 25px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    /* padding: 0; */
+}
+
+.clicked {
+    /* background-color: whitesmoke; */
+    opacity: 0;
+}
+
+.space {
+    margin: 0 5px;
+}
+
+#word-to-guess {
+    position: relative;
+    bottom: 0;
+}
+
+#draw {
+    /* border: 1px solid black; */
+    height: 200px;
+}
+
+#lives-counter {
+    margin-bottom: 0;
+}
+#the-word {
+    opacity: 0;
+    margin-bottom: 0;
+}
